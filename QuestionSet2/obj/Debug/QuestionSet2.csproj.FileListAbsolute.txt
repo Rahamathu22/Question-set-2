@@ -1,0 +1,6 @@
+c:\users\rahamath\documents\visual studio 2012\Projects\QuestionSet2\QuestionSet2\bin\Debug\QuestionSet2.exe.config
+c:\users\rahamath\documents\visual studio 2012\Projects\QuestionSet2\QuestionSet2\bin\Debug\QuestionSet2.exe
+c:\users\rahamath\documents\visual studio 2012\Projects\QuestionSet2\QuestionSet2\bin\Debug\QuestionSet2.pdb
+c:\users\rahamath\documents\visual studio 2012\Projects\QuestionSet2\QuestionSet2\obj\Debug\QuestionSet2.csprojResolveAssemblyReference.cache
+c:\users\rahamath\documents\visual studio 2012\Projects\QuestionSet2\QuestionSet2\obj\Debug\QuestionSet2.exe
+c:\users\rahamath\documents\visual studio 2012\Projects\QuestionSet2\QuestionSet2\obj\Debug\QuestionSet2.pdb
