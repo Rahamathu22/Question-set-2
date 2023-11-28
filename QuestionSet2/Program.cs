@@ -10,7 +10,7 @@ namespace QuestionSet2
     {
         static void Main(string[] args)
         {
-            Q16();
+            Q26();
         }
 
         public static int GetInteger(string message)
@@ -421,5 +421,323 @@ namespace QuestionSet2
                   }
             }
         }
+
+        public static void Q17()
+        {
+            int Value = GetInteger("Enter the number of sides between (3 to 10) to find the shape:");
+            switch (Value)
+            {
+                case 3:
+                    {
+                        Console.WriteLine("Triangle");
+                        break;
+                    }
+                case 4:
+                    {
+                        Console.WriteLine("Square");
+                        break;
+                    }
+                case 5:
+                    {
+                        Console.WriteLine("Pentagon");
+                        break;
+                    }
+                case 6:
+                    {
+                        Console.WriteLine("Hexagon");
+                        break;
+                    }
+                case 7:
+                    {
+                        Console.WriteLine("Heptagon");
+                        break;
+                    }
+                case 8:
+                    {
+                        Console.WriteLine("Octagon");
+                        break;
+                    }
+                case 9:
+                    {
+                        Console.WriteLine("Enneagon");
+                        break;
+                    }
+                case 10:
+                    {
+                        Console.WriteLine("Decagon");
+                        break;
+                    }
+                default:
+                    {
+                        Console.WriteLine("Invalid input");
+                        break;
+                    }
+            }
+        }
+
+        public static void Q18()
+        {
+            Console.WriteLine("Enter the month to find the number of days:");
+            string Month = Console.ReadLine();
+            switch (Month.ToLower())
+            {
+                case "january":
+                    {
+                        Console.WriteLine("There are 31 days in the month of january");
+                        break;
+                    }
+                case "feburary":
+                    {
+                        Console.WriteLine("There are 28 days in the month of feurary");
+                        break;
+                    }
+                case "march":
+                    {
+                        Console.WriteLine("There are 31 days in the month of march");
+                        break;
+                    }
+                case "april":
+                    {
+                        Console.WriteLine("There are 30 days in the month of april");
+                        break;
+                    }
+                case "may":
+                    {
+                        Console.WriteLine("There are 31 days in the month of may");
+                        break;
+                    }
+                case "june":
+                    {
+                        Console.WriteLine("There are 30 days in the month of june");
+                        break;
+                    }
+                case "july":
+                    {
+                        Console.WriteLine("There are 31 days in the month of july");
+                        break;
+                    }
+                case "august":
+                    {
+                        Console.WriteLine("There are 31 days in the month of august");
+                        break;
+                    }
+                case "september":
+                    {
+                        Console.WriteLine("There are 30 days in the month of september");
+                        break;
+                    }
+                case "october":
+                    {
+                        Console.WriteLine("There are 31 days in the month of august");
+                        break;
+                    }
+                case "november":
+                    {
+                        Console.WriteLine("There are 30 days in the month of november");
+                        break;
+                    }
+                case "december":
+                    {
+                        Console.WriteLine("There are 31 days in the month of december");
+                        break;
+                    }
+                default:
+                    {
+                        Console.WriteLine("Invalid input");
+                        break;
+                    }
+            }
+        }
+
+        public static void Q19()
+        {
+            int week = GetInteger("Enter the date to find the day:");
+            if (week % 7 == 0)
+            {
+                Console.WriteLine("Sunday");
+            }
+            else if (week % 7 == 1)
+            {
+                Console.WriteLine("Monday");
+            }
+            else if (week % 7 == 2)
+            {
+                Console.WriteLine("Tuesday");
+            }
+            else if (week % 7 == 3)
+            {
+                Console.WriteLine("Wednesday");
+            }
+            else if (week % 7 == 4)
+            {
+                Console.WriteLine("Thrusday");
+            }
+            else if (week % 7 == 5)
+            {
+                Console.WriteLine("Friday");
+            }
+            else if (week % 7 == 6)
+            {
+                Console.WriteLine("Saturday");
+            }
+            else
+            {
+                Console.WriteLine("Invalid input");
+            }
+        }
+
+        public static void Q20()
+        {
+            Console.WriteLine("Enter the length of size of a triangle to find the name of the triangle:");
+            int FirstLength = GetInteger("Enter the length of size1 of a triangle:");
+            int SecondLength = GetInteger("Enter the length of size2 of a triangle:");
+            int ThirdLength = GetInteger("Enter the length of size3 of a triangle:");
+            if (FirstLength == SecondLength && FirstLength == ThirdLength)
+            {
+                Console.WriteLine("It is an Equilateral triangle");
+            }
+            else if (FirstLength == SecondLength || SecondLength == ThirdLength || FirstLength == ThirdLength)
+            {
+                Console.WriteLine("It is an isosceles triangle");
+            }
+            else
+            {
+                Console.WriteLine("It is an scalene triangle");
+            }
+        }
+
+        public static void Q21()
+        {
+            int Mark = GetInteger("Enter the Mark to view your grade:");
+            if (Mark <= 100 && Mark >= 90)
+            {
+                Console.WriteLine("A");
+            }
+            else if (Mark < 90 && Mark >= 80)
+            {
+                Console.WriteLine("B");
+            }
+            else if (Mark < 80 && Mark >= 60)
+            {
+                Console.WriteLine("C");
+            }
+            else if (Mark < 60 && Mark >= 50)
+            {
+                Console.WriteLine("F");
+            }
+            else
+            {
+                Console.WriteLine("Fail");
+            }
+        }
+
+        public static void Q22()
+        {
+            int Row = GetInteger("Enter the row number between(1 to 8):");
+            int Column = GetInteger("Enter the column number between(1 to 8):");
+            int sum=Row+Column;
+            if (sum % 2 == 0)
+            {
+                Console.WriteLine("Black");
+            }
+            else
+            {
+                Console.WriteLine("White");
+            }
+        }
+
+        public static void Q24()
+        {
+            int Buy = GetInteger("Enter the amount that you buy the product:");
+            int Sale = GetInteger("Enter the amount that you sale to the customer:");
+            int result = Math.Abs(Buy - Sale);
+            if (Sale > Buy)
+            {
+                Console.WriteLine("Your profit is:" + result);
+            }
+            else
+            {
+                Console.WriteLine("Your loss is:"+result);
+            }
+        }
+
+        public static void Q25()
+        {
+            int FirstValue = GetInteger("Enter the first number:");
+            int SecondValue = GetInteger("Enter the second number:");
+            Console.WriteLine("1.Addition");
+            Console.WriteLine("2.Subtraction");
+            Console.WriteLine("3.Multiplication");
+            Console.WriteLine("4.Division");
+            Console.WriteLine("5.Modulo Division");
+            int Value = GetInteger("Enter the number to perform the operation:");
+            switch (Value)
+            {
+                case 1:
+                    {
+                        Console.WriteLine(FirstValue+SecondValue);
+                        break;
+                    }
+                case 2:
+                    {
+                        Console.WriteLine(FirstValue-SecondValue);
+                        break;
+                    }
+                case 3:
+                    {
+                        Console.WriteLine(FirstValue*SecondValue);
+                        break;
+                    }
+                case 4:
+                    {
+                        Console.WriteLine(FirstValue/SecondValue);
+                        break;
+                    }
+                case 5:
+                    {
+                        Console.WriteLine(FirstValue%SecondValue);
+                        break;
+                    }
+                default:
+                    {
+                        Console.WriteLine("Invalid input");
+                        break;
+                    }
+            }
+        }
+
+        public static void Q26()
+        {
+            Console.WriteLine("1.Rock");
+            Console.WriteLine("2.Paper");
+            Console.WriteLine("3.Scissors");
+            int value = GetInteger("Enter the number to choose your option:");
+            Random r = new Random();
+            int random = r.Next(1, 4);
+            Console.WriteLine("Computer choice:"+random);
+            int ComputerChoise=random;
+            if (ComputerChoise == value)
+            {
+                Console.WriteLine("Match draw");
+            }
+            else if (ComputerChoise == 1 && value == 3)
+            {
+                Console.WriteLine("Computer win");
+            }
+            else if (ComputerChoise == 2 && value == 1)
+            {
+                Console.WriteLine("Computer win");
+            }
+            else if (ComputerChoise == 3 && value == 2)
+            {
+                Console.WriteLine("Computer win");
+            }
+            else
+            {
+                Console.WriteLine("You win");
+            }
+
+        }
+
     }
 }
